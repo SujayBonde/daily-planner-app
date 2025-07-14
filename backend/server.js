@@ -20,7 +20,10 @@ connection.once('open', () => {
 
 const tasksRouter = require('./routes/tasks');
 app.use('/tasks', tasksRouter);
+const usersRouter = require('./routes/users');
+app.use('/users', usersRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
+

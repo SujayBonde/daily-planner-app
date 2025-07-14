@@ -7,6 +7,134 @@
   padding: 0;
 }
 
+/* --- REFINED ATTRACTIVE NAVBAR --- */
+.navbar {
+  /* Use the clean secondary background from your theme */
+  background-color: var(--background-secondary);
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem; /* Give it some space from the top of the viewport */
+  margin-bottom: 2.5rem; /* More space below */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-primary) !important;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 32px;
+  margin-right: 12px;
+}
+
+/* Main nav links styling */
+.navbar-nav .nav-link {
+  color: var(--text-secondary);
+  font-weight: 600;
+  padding: 0.6rem 1.2rem !important; /* Make links bigger, tappable targets */
+  border-radius: 8px; /* This creates the "pill" shape */
+  transition: all 0.2s ease-in-out;
+  margin: 0 0.25rem;
+}
+
+/* This is the key style for the active page link */
+.navbar-nav .nav-link.active {
+  color: var(--primary-accent); /* Use a vibrant color from your theme */
+  background-color: rgba(74, 86, 226, 0.1); /* A subtle highlight */
+}
+
+/* A subtle hover for non-active links */
+.navbar-nav .nav-link:not(.active):hover {
+  color: var(--text-primary);
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* User authentication section */
+.navbar-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  padding-right: 0.5rem;
+}
+
+/* A cleaner, more modern logout button */
+.btn-logout {
+  background-color: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  border-radius: 8px;
+}
+
+.btn-logout:hover {
+  /* On hover, give a hint of danger/action */
+  background-color: rgba(239, 68, 68, 0.1); 
+  color: #ef4444; 
+}
+
+.navbar-text {
+  color: var(--text-secondary);
+}
+/* --- Authentication Page Styling --- */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.auth-form-container {
+  background: var(--background-secondary);
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.auth-form-container h3 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.auth-subtext {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.auth-form .form-group {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form .form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+
+.auth-switch-text {
+  margin-top: 2rem;
+  color: var(--text-secondary);
+}
+
+.auth-switch-text a {
+  color: var(--primary-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
 #btn_mytask {
   background: linear-gradient(135deg, #4A90E2, #007AFF); /* Blue gradient */
   color: white;
